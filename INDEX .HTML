@@ -1,0 +1,319 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JP Collection</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+
+        .banner {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .banner h1,
+        .banner p {
+            color: white;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        p {
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: darkred;
+        }
+
+        .whatsapp {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            width: 250px;
+            border: 1px solid gray;
+            padding: 15px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            color: darkblue;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        th {
+            background-color: darkblue;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input, textarea {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+
+        footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-card {
+                width: 90%;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            input, textarea {
+                width: 90%;
+            }
+
+            a {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<hr>
+
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+<a href="products.html">Products</a>
+
+<hr>
+
+<div class="banner">
+    <h1>JP Collection</h1>
+    <p>Ready Made Blouse Manufacturer</p>
+    <p>Surat, Gujarat</p>
+</div>
+
+<h2>Welcome to JP Collection</h2>
+
+<p>
+JP Collection is a Ready Made Blouse Manufacturer based in Surat, Gujarat.
+We provide Designer Blouse, Cotton Blouse, Party Wear Blouse, Fancy Blouse and many more at wholesale prices.
+</p>
+
+<p>
+For bulk orders and business inquiries, contact us on WhatsApp.
+</p>
+
+<h2>Gallery</h2>
+
+<div class="products">
+
+    <div class="product-card">
+        <img src="blouse1.jpg">
+        <p>Designer Blouse</p>
+    </div>
+
+    <div class="product-card">
+        <img src="blouse2.jpg">
+        <p>Cotton Blouse</p>
+    </div>
+
+    <div class="product-card">
+        <img src="blouse3.jpg">
+        <p>Party Wear Blouse</p>
+    </div>
+
+</div>
+
+<h2>Our Products</h2>
+
+<div class="products">
+
+    <div class="product-card">
+        <h3>Designer Blouse</h3>
+        <p>Price: ₹250</p>
+    </div>
+
+    <div class="product-card">
+        <h3>Cotton Blouse</h3>
+        <p>Price: ₹180</p>
+    </div>
+
+    <div class="product-card">
+        <h3>Party Wear Blouse</h3>
+        <p>Price: ₹300</p>
+    </div>
+
+</div>
+
+<ul>
+    <li>Designer Blouse</li>
+    <li>Cotton Blouse</li>
+    <li>Party Wear Blouse</li>
+    <li>Fancy Blouse</li>
+    <li>Printed Blouse</li>
+</ul>
+
+<table>
+    <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+    </tr>
+
+    <tr>
+        <td>Fancy Blouse</td>
+        <td>₹150</td>
+    </tr>
+
+    <tr>
+        <td>Cotton Blouse</td>
+        <td>₹180</td>
+    </tr>
+
+    <tr>
+        <td>Designer Blouse</td>
+        <td>₹250</td>
+    </tr>
+
+    <tr>
+        <td>Party Wear Blouse</td>
+        <td>₹300</td>
+    </tr>
+</table>
+
+<br>
+
+<img src="blouse.jpg" width="300">
+
+<br><br>
+
+<a class="whatsapp"
+href="https://wa.me/919116830652?text=Hello%20JP%20Collection,%20I%20want%20to%20know%20about%20your%20blouse%20collection.">
+Order on WhatsApp
+</a>
+
+<h2>Customer Enquiry Form</h2>
+
+<form>
+    <label>Name:</label><br>
+    <input type="text" placeholder="Enter Your Name"><br><br>
+
+    <label>Mobile Number:</label><br>
+    <input type="tel" placeholder="Enter Your Mobile Number"><br><br>
+
+    <label>Message:</label><br>
+    <textarea placeholder="Write Your Message"></textarea><br><br>
+
+    <input type="submit" value="Send">
+</form>
+
+<h2>Contact Us</h2>
+
+<p>JP Collection</p>
+<p>1014, Lower Ground, Pashupati Market, Ring Road, Surat</p>
+<p>Mobile: 9116830652</p>
+
+<a href="https://wa.me/919116830652">
+WhatsApp Us
+</a>
+
+<h2>Customer Reviews</h2>
+
+<div class="product-card">
+    <h3>★★★★★</h3>
+    <p>Good quality blouse and timely delivery.</p>
+    <p><b>- Priya Fashion</b></p>
+</div>
+
+<div class="product-card">
+    <h3>★★★★★</h3>
+    <p>Nice collection and reasonable prices.</p>
+    <p><b>- Shree Boutique</b></p>
+</div>
+
+<hr>
+
+<footer>
+    <p>© 2026 JP Collection</p>
+    <p>Ready Made Blouse Manufacturer, Surat</p>
+    <p>📞 9116830652</p>
+</footer>
+
+</body>
+</html>
+```

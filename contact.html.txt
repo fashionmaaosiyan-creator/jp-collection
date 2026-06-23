@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+
+<h1>Contact JP Collection</h1>
+
+<p>Address: 1014, Lower Ground, Pashupati Market, Ring Road, Surat</p>
+
+<p>Mobile: 9116830652</p>
+
+<a href="contact.html">Contact</a>
+
+</body>
+</html>
