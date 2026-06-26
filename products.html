@@ -4,134 +4,156 @@
     <title>Products - JP Collection</title>
 
     <style>
-        body {
+        body{
             background-color: lightblue;
             font-family: Arial;
         }
 
-        h1 {
-            color: darkblue;
-            text-align: center;
+        h1{
+            text-align:center;
+            color:darkblue;
         }
 
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .menu{
+            text-align:center;
+            margin:20px;
         }
 
-        .product-card {
-            width: 250px;
-            border: 1px solid gray;
-            padding: 15px;
-            margin: 15px;
-            background-color: white;
-            border-radius: 10px;
-            text-align: center;
+        .menu a{
+            text-decoration:none;
+            background-color:navy;
+            color:white;
+            padding:10px;
+            margin:5px;
+            border-radius:5px;
         }
 
-        .product-card img {
-            width: 200px;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
+        .products{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
         }
 
-        .product-card h3 {
-            color: darkblue;
+        .product-card{
+            width:250px;
+            background:white;
+            border:1px solid gray;
+            border-radius:10px;
+            margin:15px;
+            padding:15px;
+            text-align:center;
         }
 
-        .order-btn {
-            display: inline-block;
-            background-color: green;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
+        .product-card img{
+            width:200px;
+            height:250px;
+            object-fit:cover;
+            border-radius:10px;
         }
 
-        a {
-            text-decoration: none;
-            background-color: navy;
-            color: white;
-            padding: 10px;
-            margin: 5px;
-            border-radius: 5px;
-        }
-
-        a:hover {
-            background-color: darkred;
-        }
-
-        footer {
-            background-color: red;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
+        .whatsapp{
+            background:green;
+            color:white;
+            padding:10px;
+            text-decoration:none;
+            border-radius:5px;
+            display:inline-block;
+            margin-top:10px;
         }
     </style>
 </head>
 
 <body>
 
-<hr>
-
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="contact.html">Contact</a>
-<a href="products.html">Products</a>
-
-<hr>
+<div class="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="products.html">Products</a>
+</div>
 
 <h1>Our Products</h1>
 
 <div class="products">
 
-    <div class="product-card">
-        <img src="blouse.jpg.jpeg" alt="Designer Blouse">
-        <h3>Designer Blouse</h3>
-        <p>Price: ₹250</p>
-        <a class="order-btn" href="https://wa.me/919116830652?text=I%20want%20to%20order%20Designer%20Blouse" target="_blank">
-            Order Now
-        </a>
-    </div>
-
-    <div class="product-card">
-        <img src="blouse.jpg.jpeg" alt="Cotton Blouse">
-        <h3>Cotton Blouse</h3>
-        <p>Price: ₹180</p>
-        <a class="order-btn" href="https://wa.me/919116830652?text=I%20want%20to%20order%20Cotton%20Blouse" target="_blank">
-            Order Now
-        </a>
-    </div>
-
-    <div class="product-card">
-        <img src="blouse.jpg.jpeg" alt="Party Wear Blouse">
-        <h3>Party Wear Blouse</h3>
-        <p>Price: ₹300</p>
-        <a class="order-btn" href="https://wa.me/919116830652?text=I%20want%20to%20order%20Party%20Wear%20Blouse" target="_blank">
-            Order Now
-        </a>
-    </div>
-
-    <div class="product-card">
-        <img src="blouse.jpg.jpeg" alt="Fancy Blouse">
-        <h3>Fancy Blouse</h3>
-        <p>Price: ₹150</p>
-        <a class="order-btn" href="https://wa.me/919116830652?text=I%20want%20to%20order%20Fancy%20Blouse" target="_blank">
-            Order Now
-        </a>
-    </div>
-
+<div class="product-card">
+<img src="BRIDAL FANTOM.jpeg">
+<h3>BRIDAL FANTOM</h3>
+<p>₹200</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want BRIDAL FANTOM blouse">Order Now</a>
 </div>
 
-<footer>
-    <p>© 2026 JP Collection</p>
-    <p>Ready Made Blouse Manufacturer, Surat</p>
-    <p>📞 9116830652</p>
-</footer>
+<div class="product-card">
+<img src="BRIDAL GOLD.jpeg">
+<h3>BRIDAL GOLD</h3>
+<p>₹200</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want BRIDAL GOLD blouse">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="CHINA.jpeg">
+<h3>CHINA</h3>
+<p>₹130</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want CHINA blouse">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="COTTON PRINT.jpeg">
+<h3>COTTON PRINT</h3>
+<p>₹160</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want COTTON PRINT blouse">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="FANDY BELT.jpeg">
+<h3>FANDY BELT</h3>
+<p>₹250</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want FANDY BELT blouse">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="FANDY SILVER.jpeg">
+<h3>FANDY SILVER</h3>
+<p>₹220</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want FANDY SILVER blouse">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="JFR 44.jpeg">
+<h3>JFR 44</h3>
+<p>₹180</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want JFR 44 blouse">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="JIMICHOO 2.jpeg">
+<h3>JIMICHOO 2</h3>
+<p>₹200</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want JIMICHOO 2 blouse">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="KAMAL FANDY .jpeg">
+<h3>KAMAL FANDY</h3>
+<p>₹260</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want KAMAL FANDY blouse">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="KORA 9MM MULTI.jpeg">
+<h3>KORA 9MM MULTI</h3>
+<p>₹210</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want KORA 9MM MULTI blouse">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="ROMAN SILK.jpeg">
+<h3>ROMAN SILK</h3>
+<p>₹230</p>
+<a class="whatsapp" href="https://wa.me/919116830652?text=I want ROMAN SILK blouse">Order Now</a>
+</div>
+
+</div>
 
 </body>
 </html>
