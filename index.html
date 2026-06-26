@@ -6,14 +6,34 @@
     <style>
         body {
             background-color: lightblue;
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             margin: 0;
             padding: 0;
         }
 
+        .banner {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .banner h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .banner p {
+            color: white;
+            font-size: 20px;
+            margin: 5px;
+        }
+
         .menu {
             text-align: center;
-            padding: 20px;
+            margin: 20px;
         }
 
         .menu a {
@@ -30,11 +50,13 @@
             background-color: darkred;
         }
 
-        .banner {
-            background-color: darkblue;
-            color: white;
+        h2 {
+            color: green;
             text-align: center;
-            padding: 30px;
+        }
+
+        p {
+            text-align: center;
         }
 
         .products {
@@ -45,12 +67,13 @@
 
         .product-card {
             width: 250px;
-            background-color: white;
             border: 1px solid gray;
-            border-radius: 10px;
-            margin: 15px;
             padding: 15px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 10px;
             text-align: center;
+            box-shadow: 0px 4px 10px gray;
         }
 
         .product-card img {
@@ -58,24 +81,13 @@
             border-radius: 10px;
         }
 
-        .whatsapp-btn {
+        .whatsapp-button {
             background-color: green;
             color: white;
-            padding: 10px 15px;
-            text-decoration: none;
+            padding: 10px 20px;
             border-radius: 5px;
+            text-decoration: none;
             display: inline-block;
-            margin-top: 10px;
-        }
-
-        h2 {
-            text-align: center;
-            color: darkblue;
-        }
-
-        .content {
-            padding: 20px;
-            text-align: center;
         }
 
         footer {
@@ -86,8 +98,30 @@
             margin-top: 30px;
         }
 
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: green;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
         @media screen and (max-width: 600px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+
             .product-card {
+                width: 90%;
+            }
+
+            .product-card img {
                 width: 90%;
             }
         }
@@ -96,83 +130,72 @@
 
 <body>
 
-<div class="menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
-    <a href="products.html">Products</a>
-</div>
+    <div class="banner">
+        <h1>JP Collection</h1>
+        <p>Ready Made Blouse Manufacturer</p>
+        <p>Surat, Gujarat</p>
+    </div>
 
-<div class="banner">
-    <h1>JP Collection</h1>
-    <h3>Ready Made Blouse Manufacturer</h3>
-    <p>Surat, Gujarat</p>
-</div>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html">Products</a>
+    </div>
 
-<div class="content">
+    <hr>
+
     <h2>Welcome to JP Collection</h2>
 
     <p>
         JP Collection is a Ready Made Blouse Manufacturer based in Surat, Gujarat.
-        We manufacture Designer Blouse, Cotton Blouse, Fancy Blouse and Party Wear Blouse
-        at wholesale prices.
+        We provide Designer Blouse, Cotton Blouse, Party Wear Blouse and Fancy Blouse at wholesale prices.
     </p>
-</div>
 
-<h2>Our Products</h2>
+    <h2>Gallery</h2>
 
-<div class="products">
+    <div class="products">
 
-    <div class="product-card">
-        <img src="blouse.jpg.jpeg" alt="Designer Blouse">
-        <h3>Designer Blouse</h3>
-        <p>Price: ₹250</p>
-        <a class="whatsapp-btn"
-        href="https://wa.me/919116830652?text=I%20want%20to%20order%20Designer%20Blouse">
-        Order Now
-        </a>
+        <div class="product-card">
+            <img src="blouse.jpg.jpeg" alt="Designer Blouse">
+            <p><b>Designer Blouse</b></p>
+        </div>
+
+        <div class="product-card">
+            <img src="blouse.jpg.jpeg" alt="Cotton Blouse">
+            <p><b>Cotton Blouse</b></p>
+        </div>
+
+        <div class="product-card">
+            <img src="blouse.jpg.jpeg" alt="Party Wear Blouse">
+            <p><b>Party Wear Blouse</b></p>
+        </div>
+
     </div>
 
-    <div class="product-card">
-        <img src="blouse.jpg.jpeg" alt="Cotton Blouse">
-        <h3>Cotton Blouse</h3>
-        <p>Price: ₹180</p>
-        <a class="whatsapp-btn"
-        href="https://wa.me/919116830652?text=I%20want%20to%20order%20Cotton%20Blouse">
-        Order Now
-        </a>
-    </div>
-
-    <div class="product-card">
-        <img src="blouse.jpg.jpeg" alt="Party Wear Blouse">
-        <h3>Party Wear Blouse</h3>
-        <p>Price: ₹300</p>
-        <a class="whatsapp-btn"
-        href="https://wa.me/919116830652?text=I%20want%20to%20order%20Party%20Wear%20Blouse">
-        Order Now
-        </a>
-    </div>
-
-</div>
-
-<div class="content">
     <h2>Contact Us</h2>
 
     <p><b>JP Collection</b></p>
     <p>1014 Lower Ground, Pashupati Market, Ring Road, Surat</p>
     <p>📞 9116830652</p>
 
-    <a class="whatsapp-btn"
-    href="https://wa.me/919116830652?text=Hello%20JP%20Collection">
-    Chat on WhatsApp
-    </a>
-</div>
+    <p>
+        <a class="whatsapp-button"
+           href="https://wa.me/919116830652?text=Hello%20JP%20Collection,%20I%20want%20to%20know%20about%20your%20blouse%20collection.">
+            Order on WhatsApp
+        </a>
+    </p>
 
-<footer>
-    <p>© 2026 JP Collection</p>
-    <p>Ready Made Blouse Manufacturer, Surat</p>
-    <p>📞 9116830652</p>
-</footer>
+    <footer>
+        <p>© 2026 JP Collection</p>
+        <p>Ready Made Blouse Manufacturer, Surat</p>
+        <p>📞 9116830652</p>
+    </footer>
+
+    <a class="floating-whatsapp"
+       href="https://wa.me/919116830652?text=Hello%20JP%20Collection,%20I%20want%20to%20know%20about%20your%20blouse%20collection.">
+        WhatsApp
+    </a>
 
 </body>
 </html>
