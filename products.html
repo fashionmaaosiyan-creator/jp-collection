@@ -17,6 +17,7 @@
         .products {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .product-card {
@@ -27,6 +28,13 @@
             background-color: white;
             border-radius: 10px;
             text-align: center;
+        }
+
+        .product-card img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
         }
 
         .product-card h3 {
@@ -72,21 +80,25 @@
 <div class="products">
 
     <div class="product-card">
+        <img src="blouse.jpg.jpeg" alt="Designer Blouse">
         <h3>Designer Blouse</h3>
         <p>Price: ₹250</p>
     </div>
 
     <div class="product-card">
+        <img src="blouse.jpg.jpeg" alt="Cotton Blouse">
         <h3>Cotton Blouse</h3>
         <p>Price: ₹180</p>
     </div>
 
     <div class="product-card">
+        <img src="blouse.jpg.jpeg" alt="Party Wear Blouse">
         <h3>Party Wear Blouse</h3>
         <p>Price: ₹300</p>
     </div>
 
     <div class="product-card">
+        <img src="blouse.jpg.jpeg" alt="Fancy Blouse">
         <h3>Fancy Blouse</h3>
         <p>Price: ₹150</p>
     </div>
