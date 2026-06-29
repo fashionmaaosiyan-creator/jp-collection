@@ -153,6 +153,29 @@
         <p>Premium Ready Made Blouse Manufacturer</p>
         <p>Surat, Gujarat</p>
     </div>
+    <div class="slider">
+    <img id="slideImage" src="ROMAN SILK .jpeg">
+</div>
+
+<script>
+    const images = [
+        "ROMAN SILK .jpeg",
+        "COTTON PRINT.jpeg",
+        "MALAI SATIN.jpeg"
+    ];
+
+    let current = 0;
+
+    setInterval(function () {
+        current++;
+
+        if (current >= images.length) {
+            current = 0;
+        }
+
+        document.getElementById("slideImage").src = images[current];
+    }, 3000);
+</script>
 
     <div class="menu">
         <a href="index.html">Home</a>
