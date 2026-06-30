@@ -3,54 +3,41 @@
 <head>
     <title>JP Collection</title>
 
-    <style>   .mataji{
-    background:#8B0000;
-    color:#FFD700;
-    text-align:center;
-    padding:15px;
-    font-size:28px;
-    font-weight:bold;
-}     .slider{
-    text-align:center;
-    margin:30px 0;
-}
-
-.slider img{
-    width:200;
-    height:260px;
-    object-fit:cover;
-    border-radius:20px;
-    box-shadow:0px 5px 20px rgba(0,0,0,0.3);
-}*{
+    <style>
+        body{
             margin:0;
             padding:0;
-            box-sizing:border-box;
             font-family:Arial, sans-serif;
-        }
-
-        body{
             background:#f5f5f5;
         }
 
-        .hero{
-            background:linear-gradient(to right,#001f54,#003566);
-            color:white;
-            padding:60px 20px;
+        .mataji{
+            background:#8B0000;
+            color:#FFD700;
             text-align:center;
+            padding:15px;
+            font-size:28px;
+            font-weight:bold;
         }
 
-        .hero h1{
-            font-size:60px;
-            color:gold;
+        .header{
+            background:#002147;
+            color:white;
+            text-align:center;
+            padding:30px;
         }
 
-        .hero p{
-            font-size:22px;
-            margin-top:10px;
+        .header h1{
+            margin:0;
+            font-size:40px;
+        }
+
+        .header p{
+            font-size:18px;
         }
 
         .menu{
-            background:#002855;
+            background:#333;
             text-align:center;
             padding:15px;
         }
@@ -58,288 +45,98 @@
         .menu a{
             color:white;
             text-decoration:none;
-            margin:15px;
+            margin:20px;
             font-size:18px;
-            font-weight:bold;
         }
 
-        .menu a:hover{
-            color:gold;
-        }
-
-        .section-title{
+        .hero{
             text-align:center;
-            color:#002855;
-            margin-top:40px;
-            font-size:40px;
+            padding:50px 20px;
+            background:white;
         }
 
-        .about{
-            width:80%;
-            margin:auto;
-            text-align:center;
-            padding:20px;
-            font-size:20px;
+        .hero h2{
+            color:#002147;
         }
 
         .products{
-            display:flex;
-            flex-wrap:wrap;
-            justify-content:center;
-            gap:30px;
+            text-align:center;
             padding:40px;
         }
 
-        .product-card{
-            width:280px;
-            background:white;
-            border-radius:20px;
-            overflow:hidden;
-            box-shadow:0 5px 20px rgba(0,0,0,0.2);
-            transition:0.3s;
-        }
-
-        .product-card:hover{
-            transform:translateY(-10px);
-        }
-
-        .product-card img{
-            width:100%;
-            height:350px;
-            object-fit:cover;
-        }
-
-        .product-card h3{
-            text-align:center;
-            padding:15px;
-            color:#002855;
-        }
-
-        .whatsapp-btn{
+        .product-box{
             display:inline-block;
-            background:green;
-            color:white;
-            text-decoration:none;
-            padding:12px 25px;
-            border-radius:8px;
-            margin-top:20px;
+            width:250px;
+            background:white;
+            margin:15px;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px lightgray;
+        }
+
+        .product-box img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+            border-radius:10px;
         }
 
         .contact{
-            text-align:center;
-            padding:40px;
-        }
-
-        footer{
-            background:#001f54;
+            background:#002147;
             color:white;
             text-align:center;
-            padding:25px;
-            margin-top:30px;
-        }
-
-        .floating-whatsapp{
-            position:fixed;
-            right:20px;
-            bottom:20px;
-            background:green;
-            color:white;
-            text-decoration:none;
-            padding:15px 20px;
-            border-radius:50px;
-            font-weight:bold;
-        }
-
-        @media(max-width:768px){
-            .hero h1{
-                font-size:40px;
-            }
-
-            .products{
-                flex-direction:column;
-                align-items:center;
-            }
+            padding:30px;
         }
     </style>
 </head>
 
 <body>
+
     <div class="mataji">
-    🌸 श्री सच्चियाय माता जी 🌸
-</div>
-
-    <div class="hero">
-        <h1>JP COLLECTION</h1>
-        <p>Premium Ready Made Blouse Manufacturer</p>
-        <p>Surat, Gujarat</p>
+        ॥ श्री सच्चियाय माता जी ॥
     </div>
-    <div class="slider">
-    <img id="slideImage" src="ROMAN SILK .jpeg">
-</div>
 
-<script>
-    const images = [
-        "ROMAN SILK .jpeg",
-        "COTTON PRINT.jpeg",
-        "MALAI SATIN.jpeg"
-    ];
-
-    let current = 0;
-
-    setInterval(function () {
-        current++;
-
-        if (current >= images.length) {
-            current = 0;
-        }
-
-        document.getElementById("slideImage").src = images[current];
-    }, 3000);
-</script>
+    <div class="header">
+        <h1>JP Collection</h1>
+        <p>Ready Made Blouse Manufacturer</p>
+    </div>
 
     <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
     </div>
 
-    <h2 class="section-title">Premium Blouse Collection</h2>
-
-    <div class="about">
-        JP Collection is a trusted Ready Made Blouse Manufacturer from Surat.
-        We specialize in Designer, Fancy, Cotton and Party Wear Blouses at wholesale prices.
+    <div class="hero">
+        <h2>Welcome to JP Collection</h2>
+        <p>Designer, Fancy, Cotton aur Party Wear Blouse Manufacturer</p>
     </div>
 
     <div class="products">
+        <h2>Our Products</h2>
 
-        <div class="product-card">
-            <img src="ROMAN SILK .jpeg">
+        <div class="product-box">
+            <img src="blouse1.jpg">
             <h3>Designer Blouse</h3>
         </div>
 
-        <div class="product-card">
-            <img src="COTTON PRINT.jpeg">
+        <div class="product-box">
+            <img src="blouse2.jpg">
             <h3>Cotton Blouse</h3>
         </div>
 
-        <div class="product-card">
-            <img src="MALAI SATIN.jpeg">
+        <div class="product-box">
+            <img src="blouse3.jpg">
             <h3>Party Wear Blouse</h3>
         </div>
-        <h2 class="section-title">Why Choose JP Collection?</h2>
-
-<div class="products">
-
-    <div class="product-card">
-        <h3>⭐ Premium Quality</h3>
-        <p>
-            High quality fabric aur best finishing ke saath
-            har blouse taiyar kiya jata hai.
-        </p>
     </div>
-
-    <div class="product-card">
-        <h3>💰 Wholesale Prices</h3>
-        <p>
-            Manufacturer se direct supply,
-            isliye best wholesale rates milte hain.
-        </p>
-    </div>
-
-    <div class="product-card">
-        <h3>🚚 Fast Delivery</h3>
-        <p>
-            India ke har shehar mein
-            jaldi dispatch aur delivery.
-        </p>
-    </div>
-
-    <div class="product-card">
-        <h3>✨ Latest Designs</h3>
-        <p>
-            Regular naye designs aur trendy collections
-            available rehte hain.
-        </p>
-    </div>
-
-</div>
-
-    </div
-        <h2 class="section-title">Customer Reviews</h2>
-
-<div class="products">
-
-    <div class="product-card">
-        <h3>⭐⭐⭐⭐⭐</h3>
-        <p>"Excellent blouse quality and finishing."</p>
-        <p><b>- Surat Customer</b></p>
-    </div>
-
-    <div class="product-card">
-        <h3>⭐⭐⭐⭐⭐</h3>
-        <p>"Very good collection and wholesale prices."</p>
-        <p><b>- Jaipur Customer</b></p>
-    </div>
-
-    <div class="product-card">
-        <h3>⭐⭐⭐⭐⭐</h3>
-        <p>"Fast delivery and latest designs available."</p>
-        <p><b>- Mumbai Customer</b></p>
-    </div>
-
-</div>
-    <h2 class="section-title">🔥 Best Seller Collection 🔥</h2>
-
-    </div>
-
-</div>
-<div class="products">
-
-    <div class="product-card">
-        <img src="ROMAN SILK .jpeg">
-        <h3>Roman Silk Collection</h3>
-        <p>Premium Designer Blouse</p>
-    </div>
-
-    <div class="product-card">
-        <img src="COTTON PRINT.jpeg">
-        <h3>Cotton Print Collection</h3>
-        <p>Comfortable Daily Wear</p>
-    </div>
-
-    <div class="product-card">
-        <img src="MALAI SATIN.jpeg">
-        <h3>Malai Satin Collection</h3>
-        <p>Party Wear Special</p>
-    </div>
-
-</div>
 
     <div class="contact">
-        <h2 class="section-title">Contact Us</h2>
-
-        <p><b>JP Collection</b></p>
-        <p>1014 Lower Ground, Pashupati Market, Ring Road, Surat</p>
-        <p>📞 9116830652</p>
-
-        <a class="whatsapp-btn"
-        href="https://wa.me/919116830652?text=Hello%20JP%20Collection,%20I%20want%20to%20know%20about%20your%20collection.">
-        Order on WhatsApp
-        </a>
-    </div>
-
-    <footer>
-        <h3>JP Collection</h3>
-        <p>Premium Ready Made Blouse Manufacturer</p>
+        <h2>Contact Us</h2>
+        <p>Mobile: 9116830652</p>
         <p>Surat, Gujarat</p>
-        <p>📞 9116830652</p>
-    </footer>
-
-    <a class="floating-whatsapp"
-    href="https://wa.me/919116830652?text=Hello%20JP%20Collection">
-    WhatsApp
-    </a>
+    </div>
 
 </body>
 </html>
